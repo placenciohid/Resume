@@ -1,0 +1,35 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "connection_dp",
+            "database": "myrestaurant",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "authenticator": "SNOWFLAKE",
+            "ocspOptions": {
+                "ocspFailOpen": true
+            },
+            "snowflakeOptions": {
+                "clientSessionKeepAlive": true,
+                "clientSessionKeepAliveHeartbeatFrequency": 3600
+            },
+            "previewLimit": 50,
+            "driver": "Snowflake",
+            "name": "Snowflake",
+            "account": "zz51204.us-east-2.aws",
+            "username": "Placenciohid",
+            "password": "1hjtv1kL",
+            "database": "CENSUS",
+            "warehouse": "CLASSWORK"
+        }
+    ]
+}
