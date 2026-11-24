@@ -5,6 +5,16 @@ I work in Operational Excellence at Rio Tinto, with earlier experience in data s
 
 **[Website](https://placenciohid.github.io/) · [Experience](https://placenciohid.github.io/aboutme.html) · [LinkedIn](https://www.linkedin.com/in/darioplacencio/)**
 
+## Professional work
+
+| Area | Selected outcome | Case study |
+| --- | --- | --- |
+| Forecasting and planning | 365-day production forecast with 21% lower error; separate planning optimization identified 746K dollars in confirmed savings | [Read the case](https://placenciohid.github.io/work/forecasting.html) |
+| AI document search | More than 300,000 documents searchable; platform adopted by four teams | [Read the case](https://placenciohid.github.io/work/knowledge-search.html) |
+| Commercial Services | Live Atlantic Aluminium collections dashboard and hourly aging feed | [Read the case](https://placenciohid.github.io/work/commercial-reporting.html) |
+
+The implementations below are public companions and research examples. Professional results are described in the linked case studies; synthetic example outputs are labeled separately.
+
 ## Start here
 
 | Project | Question | Runnable example | What to inspect |
