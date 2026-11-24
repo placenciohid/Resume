@@ -1,0 +1,1 @@
+Review overdue invoices by customer and currency. Separate disputed invoices from payment matching exceptions before collections follow up.

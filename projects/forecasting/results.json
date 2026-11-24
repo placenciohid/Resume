@@ -1,0 +1,125 @@
+{
+  "dataset": "180 synthetic daily production observations; arbitrary units; seed 42",
+  "evaluation": {
+    "folds": [
+      {
+        "trained_through": "2024-03-24",
+        "predict_from": "2024-03-25",
+        "predict_through": "2024-03-31"
+      },
+      {
+        "trained_through": "2024-03-31",
+        "predict_from": "2024-04-01",
+        "predict_through": "2024-04-07"
+      },
+      {
+        "trained_through": "2024-04-07",
+        "predict_from": "2024-04-08",
+        "predict_through": "2024-04-14"
+      },
+      {
+        "trained_through": "2024-04-14",
+        "predict_from": "2024-04-15",
+        "predict_through": "2024-04-21"
+      },
+      {
+        "trained_through": "2024-04-21",
+        "predict_from": "2024-04-22",
+        "predict_through": "2024-04-28"
+      },
+      {
+        "trained_through": "2024-04-28",
+        "predict_from": "2024-04-29",
+        "predict_through": "2024-05-05"
+      },
+      {
+        "trained_through": "2024-05-05",
+        "predict_from": "2024-05-06",
+        "predict_through": "2024-05-12"
+      },
+      {
+        "trained_through": "2024-05-12",
+        "predict_from": "2024-05-13",
+        "predict_through": "2024-05-19"
+      },
+      {
+        "trained_through": "2024-05-19",
+        "predict_from": "2024-05-20",
+        "predict_through": "2024-05-26"
+      },
+      {
+        "trained_through": "2024-05-26",
+        "predict_from": "2024-05-27",
+        "predict_through": "2024-06-02"
+      },
+      {
+        "trained_through": "2024-06-02",
+        "predict_from": "2024-06-03",
+        "predict_through": "2024-06-09"
+      },
+      {
+        "trained_through": "2024-06-09",
+        "predict_from": "2024-06-10",
+        "predict_through": "2024-06-16"
+      },
+      {
+        "trained_through": "2024-06-16",
+        "predict_from": "2024-06-17",
+        "predict_through": "2024-06-23"
+      }
+    ],
+    "forecasted_days": 91,
+    "seasonal_naive": {
+      "mae": 3.8145,
+      "wape": 0.0214
+    },
+    "trend_plus_weekday": {
+      "mae": 2.179,
+      "wape": 0.0122
+    }
+  },
+  "next_seven_days": [
+    {
+      "date": "2024-06-29",
+      "forecast": 190.544,
+      "low": 187.449,
+      "high": 193.822
+    },
+    {
+      "date": "2024-06-30",
+      "forecast": 193.268,
+      "low": 190.174,
+      "high": 196.547
+    },
+    {
+      "date": "2024-07-01",
+      "forecast": 209.631,
+      "low": 206.537,
+      "high": 212.91
+    },
+    {
+      "date": "2024-07-02",
+      "forecast": 206.886,
+      "low": 203.791,
+      "high": 210.164
+    },
+    {
+      "date": "2024-07-03",
+      "forecast": 205.566,
+      "low": 202.472,
+      "high": 208.845
+    },
+    {
+      "date": "2024-07-04",
+      "forecast": 205.584,
+      "low": 202.489,
+      "high": 208.862
+    },
+    {
+      "date": "2024-07-05",
+      "forecast": 203.611,
+      "low": 200.516,
+      "high": 206.89
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "dataset": "fictional records as of 2024-04-01; not actual collections",
+  "reconciliation": [
+    {
+      "remittance": "R1",
+      "currency": "USD",
+      "invoice_count": 2,
+      "invoice_total": "2000.00",
+      "payment": "2000.00",
+      "difference": "0.00",
+      "status": "cleared",
+      "missing": []
+    },
+    {
+      "remittance": "R2",
+      "currency": "CAD",
+      "invoice_count": 1,
+      "invoice_total": "900.00",
+      "payment": "850.00",
+      "difference": "-50.00",
+      "status": "payment_difference",
+      "missing": []
+    },
+    {
+      "remittance": "R3",
+      "currency": "USD",
+      "invoice_count": 1,
+      "invoice_total": "0",
+      "payment": "100.00",
+      "difference": "100.00",
+      "status": "missing_invoice",
+      "missing": [
+        "MISSING"
+      ]
+    }
+  ],
+  "open_aging": [
+    {
+      "currency": "CAD",
+      "category": "trade",
+      "bucket": "90+",
+      "lines": 1,
+      "amount": "900.00"
+    },
+    {
+      "currency": "USD",
+      "category": "sundry",
+      "bucket": "31-60",
+      "lines": 1,
+      "amount": "300.00"
+    },
+    {
+      "currency": "USD",
+      "category": "trade",
+      "bucket": "current",
+      "lines": 1,
+      "amount": "500.00"
+    }
+  ],
+  "fully_matched": {
+    "documents": 1,
+    "invoice_lines": 2,
+    "payments_by_currency": {
+      "USD": "2000.00"
+    }
+  }
+}

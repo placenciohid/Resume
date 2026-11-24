@@ -1,0 +1,1 @@
+Evaluate a production forecast against a seasonal baseline. Fit all transformations on historical training observations before a validation period.
