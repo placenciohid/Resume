@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.vscode/
+catboost_info/
+*.log
+outputs/
+.DS_Store
