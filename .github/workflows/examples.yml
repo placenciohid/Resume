@@ -1,0 +1,19 @@
+name: Portfolio examples
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python projects/event-prediction/demo.py
+      - run: python projects/optimization/demo.py
+      - run: python projects/ml-from-scratch/demo.py
