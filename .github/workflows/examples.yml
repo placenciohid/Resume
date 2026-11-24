@@ -17,3 +17,7 @@ jobs:
       - run: python projects/event-prediction/demo.py
       - run: python projects/optimization/demo.py
       - run: python projects/ml-from-scratch/demo.py
+
+      - run: python projects/forecasting/demo.py
+      - run: python projects/knowledge-search/demo.py
+      - run: python projects/commercial-reporting/demo.py

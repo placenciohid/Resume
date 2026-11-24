@@ -1,0 +1,8 @@
+{
+  "data": "synthetic; 180 training / 60 held-out records",
+  "test_accuracy": {
+    "knn": 0.9833333333333333,
+    "logistic_regression": 1.0,
+    "decision_stump": 0.8833333333333333
+  }
+}

@@ -1,0 +1,1 @@
+A remittance document can contain several invoice references. Mark the document fully cleared only when every invoice line is matched and the payment difference is within tolerance.

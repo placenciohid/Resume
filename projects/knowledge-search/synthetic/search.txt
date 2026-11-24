@@ -1,0 +1,1 @@
+Preserve document identifiers and page references when extracting text with OCR. Search results must link back to their source.

@@ -1,0 +1,43 @@
+{
+  "dataset": "six fictional documents; five hand-written evaluation queries",
+  "top1_hits": 5,
+  "queries": [
+    {
+      "query": "overdue customer invoices",
+      "expected": "receivables",
+      "top_document": "receivables"
+    },
+    {
+      "query": "pump vibration",
+      "expected": "maintenance",
+      "top_document": "maintenance"
+    },
+    {
+      "query": "OCR source document",
+      "expected": "search",
+      "top_document": "search"
+    },
+    {
+      "query": "forecast seasonal validation",
+      "expected": "forecast",
+      "top_document": "forecast"
+    },
+    {
+      "query": "remittance fully cleared invoice",
+      "expected": "remittance",
+      "top_document": "remittance"
+    }
+  ],
+  "example_evidence": [
+    {
+      "chunk_id": "remittance:0",
+      "document_id": "remittance",
+      "title": "Fictional remittance guide",
+      "text": "A remittance document can contain several invoice references. Mark the document fully cleared only when every invoice line is matched and the payment difference is within tolerance.",
+      "source": "synthetic/remittance.txt",
+      "fusion_score": 0.032787,
+      "query_coverage": 1.0,
+      "score": 0.13278688524590165
+    }
+  ]
+}
