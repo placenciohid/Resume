@@ -9,7 +9,7 @@ I work in Operational Excellence at Rio Tinto, with earlier experience in data s
 
 | Area | Selected outcome | Case study |
 | --- | --- | --- |
-| Forecasting and planning | 365-day production forecast with 21% lower error; separate planning optimization identified 746K dollars in confirmed savings | [Read the case](https://placenciohid.github.io/work/forecasting.html) |
+| Forecasting and planning | 365-day production forecast with 21% lower error; separate planning optimization identified $746K in confirmed savings | [Read the case](https://placenciohid.github.io/work/forecasting.html) |
 | AI document search | More than 300,000 documents searchable; platform adopted by four teams | [Read the case](https://placenciohid.github.io/work/knowledge-search.html) |
 | Commercial Services | Live Atlantic Aluminium collections dashboard and hourly aging feed | [Read the case](https://placenciohid.github.io/work/commercial-reporting.html) |
 
