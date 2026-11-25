@@ -1,11 +1,12 @@
 {
   "dataset": {
     "file": "data/legacy/reviews.csv",
-    "sha256": "6d4f52a7ae6b257ed736950a3237c8b0b53175a6dccafeb63716e8448d23d5bf",
+    "sha256": "ab75cd4c37ba6ef3dd595e39f47ef155eb9a66ea300a0a97bcf00d32327f6507",
     "python": "3.13.9",
     "numpy": "2.3.5",
     "pandas": "2.3.3",
-    "scikit_learn": "1.7.2"
+    "scikit_learn": "1.7.2",
+    "hash_basis": "File bytes with CRLF normalized to LF"
   },
   "raw_rows": 12495,
   "retained_rows": 10504,

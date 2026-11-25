@@ -5,7 +5,8 @@
     "python": "3.13.9",
     "numpy": "2.3.5",
     "pandas": "2.3.3",
-    "scikit_learn": "1.7.2"
+    "scikit_learn": "1.7.2",
+    "hash_basis": "File bytes with CRLF normalized to LF"
   },
   "rows": 1599,
   "duplicate_rows": 240,

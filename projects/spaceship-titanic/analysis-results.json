@@ -1,11 +1,12 @@
 {
   "dataset": {
     "file": "data/legacy/train.csv",
-    "sha256": "92515331df73abce3b7c01dba35c33971027268bd84609bc6593ca43b18e649f",
+    "sha256": "17336d553f49ebdf6ecb266d2b5d3746e5dd308445f7c7864141c4f28d2a88d0",
     "python": "3.13.9",
     "numpy": "2.3.5",
     "pandas": "2.3.3",
-    "scikit_learn": "1.7.2"
+    "scikit_learn": "1.7.2",
+    "hash_basis": "File bytes with CRLF normalized to LF"
   },
   "train_rows": 6930,
   "test_rows": 1763,

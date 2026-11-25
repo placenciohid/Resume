@@ -8,7 +8,7 @@ These employer outcomes are described in the articles. Internal datasets, privat
 
 ## Maintained real-data analyses
 
-Four `analyze.py` scripts were run for the portfolio update on **25 November 2026**. Their adjacent `analysis-results.json` files retain the data SHA-256, environment versions, evaluation protocol, and complete metrics. The wine data is sourced and licensed through UCI. The app-review and passenger analyses use the existing repository datasets with their original source context.
+Four `analyze.py` scripts were run for the portfolio update on **25 November 2026**. Their adjacent `analysis-results.json` files retain the data SHA-256 (with line endings normalized to LF), environment versions, evaluation protocol, and complete metrics. The wine data is sourced and licensed through UCI. The app-review and passenger analyses use the existing repository datasets with their original source context.
 
 These results describe the stated holdouts and preprocessing. They are not production KPIs or competition leaderboard scores. Model selection for the wine network occurs within grouped training folds. Review duplicates, repeated wine chemistry, and passenger travel groups remain within a single train/test partition.
 

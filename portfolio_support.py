@@ -12,7 +12,8 @@ def provenance(path):
     import pandas
     import sklearn
     return {'file': path.relative_to(ROOT).as_posix(),
-            'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
+            'sha256': hashlib.sha256(path.read_bytes().replace(b'\r\n',b'\n')).hexdigest(),
+            'hash_basis': 'File bytes with CRLF normalized to LF',
             'python': platform.python_version(), 'numpy': numpy.__version__,
             'pandas': pandas.__version__, 'scikit_learn': sklearn.__version__}
 
