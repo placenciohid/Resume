@@ -1,1 +1,2 @@
-# All six runnable demonstrations use Python 3.10+ and the standard library only.
+# The eight portable demonstrations use Python 3.10+ and the standard library.
+# For the four real-data analyses, install requirements-analysis.txt instead.
