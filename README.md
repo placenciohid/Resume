@@ -1,9 +1,9 @@
 # Darío Placencio
-### Operational excellence · Data science · Mining & commercial services
+### Data science & process improvement
 
 I work with operations and commercial teams to improve how work is planned, understood, and carried out. My experience spans process improvement and digital delivery at BHP, data science in Rio Tinto's Borates Digital team, and operational excellence in Commercial Services.
 
-This portfolio connects that experience with code a reviewer can inspect: forecasting evaluation, payment reconciliation, evidence retrieval, optimization, and machine learning. The project articles explain the business or analytical question, the implementation choices, the results, and what those results support.
+This repository collects professional case accounts and independent technical studies. The articles describe the problem, my contribution, and the results. Public examples use generated data where the original work belongs to an employer.
 
 **[Portfolio website](https://placenciohid.github.io/) · [Experience & education](docs/experience.md) · [LinkedIn](https://www.linkedin.com/in/darioplacencio/) · [Contact](mailto:darioplacenciohidalgo@gmail.com)**
 
@@ -13,25 +13,31 @@ This portfolio connects that experience with code a reviewer can inspect: foreca
 
 At Rio Tinto's Borates Digital team, I developed a **365-day production forecast with 21% lower error** against the prior baseline and rebuilt an annual planning model in Python, identifying **$746K in confirmed savings**. More recently, I completed a short-horizon cash-forecasting proof of concept in Commercial Services. The article separates those decisions and opens up an independently runnable forecasting evaluation.
 
-**[Read the case study and inspect the code →](projects/forecasting/)**
+**[Case study & public implementation →](projects/forecasting/)**
 
 ### AI search for technical knowledge
 
 I engineered a knowledge-search platform over **300,000+ documents**, adopted by **four teams**, combining document extraction with hybrid retrieval. The public companion shows how to preserve evidence through chunking, ranking, fusion, and source-linked results.
 
-**[Read the case study and inspect the code →](projects/knowledge-search/)**
+**[Case study & public implementation →](projects/knowledge-search/)**
 
 ### Collections reporting and reconciliation
 
 I delivered Atlantic Aluminium collections reporting, an **hourly receivables-aging feed**, and reconciliation views. The article explains the calculation choices behind a useful operational view: currency separation, reporting dates, document-level matching, and avoiding double-counted payment values.
 
-**[Read the case study and inspect the code →](projects/commercial-reporting/)**
+**[Case study & public implementation →](projects/commercial-reporting/)**
+
+### Process improvement and delivery
+
+At BHP, I investigated Americas payroll issues and developed an opportunity assessment that secured more than $5M in technology investment. Other assignments included delivery coordination for a mining asset-health initiative and simplification of a training library.
+
+**[Read the case account →](projects/process-improvement/)**
 
 The professional outcomes above describe separate work experience. The public companions use generated or fictional inputs so the implementation can be reviewed without employer datasets or source code.
 
-## Technical projects with reproducible evidence
+## Implementations & studies
 
-| Project | Question worth reviewing | Evidence to inspect |
+| Project | Focus | Implementation |
 | --- | --- | --- |
 | [Event data and rare-event modeling](projects/event-prediction/) | What was knowable at the moment of prediction? | As-of features, future-label windows, temporal gaps, train-only scaling, original neural scripts |
 | [Capacity-constrained optimization](projects/optimization/) | Can two full schedules still have different value? | Exact optimum versus first fit, capacity checks, original Julia/Pyomo notebooks |
@@ -44,7 +50,7 @@ The professional outcomes above describe separate work experience. The public co
 | [Dynamic Zoom contribution](projects/dynamic-zoom/) | Why can fast inference still produce lag? | Collaborative source link, frame-queue simulation, latency and dropped-frame accounting |
 | [Restaurant review analysis](projects/yelp-reviews/) | What can word frequencies support? | Reviewed historical notebook, sampling and labeling decisions, visualization correction |
 
-## Run something in under a minute
+## Run the examples
 
 Eight compact references run on Python 3.10+ with no packages or accounts:
 
