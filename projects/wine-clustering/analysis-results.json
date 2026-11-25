@@ -1,0 +1,107 @@
+{
+  "dataset": {
+    "file": "data/public/winequality-red.csv",
+    "sha256": "4a402cf041b025d4566d954c3b9ba8635a3a8a01e039005d97d6a710278cf05e",
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2"
+  },
+  "rows": 1599,
+  "duplicate_rows": 240,
+  "features": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ],
+  "quality_used_in_fit": false,
+  "selection": "Largest in-sample silhouette across k=2..10",
+  "candidates": [
+    {
+      "k": 2,
+      "silhouette": 0.21373,
+      "davies_bouldin": 1.8711,
+      "calinski_harabasz": 363.181308
+    },
+    {
+      "k": 3,
+      "silhouette": 0.189204,
+      "davies_bouldin": 1.767265,
+      "calinski_harabasz": 313.326226
+    },
+    {
+      "k": 4,
+      "silhouette": 0.171636,
+      "davies_bouldin": 1.657378,
+      "calinski_harabasz": 284.40522
+    },
+    {
+      "k": 5,
+      "silhouette": 0.190139,
+      "davies_bouldin": 1.462505,
+      "calinski_harabasz": 291.688556
+    },
+    {
+      "k": 6,
+      "silhouette": 0.194729,
+      "davies_bouldin": 1.398426,
+      "calinski_harabasz": 279.897457
+    },
+    {
+      "k": 7,
+      "silhouette": 0.192591,
+      "davies_bouldin": 1.402835,
+      "calinski_harabasz": 274.497657
+    },
+    {
+      "k": 8,
+      "silhouette": 0.149508,
+      "davies_bouldin": 1.526959,
+      "calinski_harabasz": 254.428087
+    },
+    {
+      "k": 9,
+      "silhouette": 0.153439,
+      "davies_bouldin": 1.564344,
+      "calinski_harabasz": 239.90807
+    },
+    {
+      "k": 10,
+      "silhouette": 0.15738,
+      "davies_bouldin": 1.506312,
+      "calinski_harabasz": 228.271508
+    }
+  ],
+  "selected_k": 2,
+  "seed_stability_ari": [
+    0.994976,
+    1.0,
+    0.994976
+  ],
+  "pca_components_for_95pct_variance": 9,
+  "first_two_pc_variance": 0.456822,
+  "cluster_profiles": [
+    {
+      "cluster": 0,
+      "rows": 590,
+      "alcohol": 10.6074,
+      "volatile_acidity": 0.4139,
+      "quality_for_posthoc_description": 5.8949
+    },
+    {
+      "cluster": 1,
+      "rows": 1009,
+      "alcohol": 10.3151,
+      "volatile_acidity": 0.5944,
+      "quality_for_posthoc_description": 5.4846
+    }
+  ]
+}

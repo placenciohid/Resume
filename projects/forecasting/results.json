@@ -76,7 +76,737 @@
     "trend_plus_weekday": {
       "mae": 2.179,
       "wape": 0.0122
-    }
+    },
+    "predictions": [
+      {
+        "origin": "2024-03-24",
+        "date": "2024-03-25",
+        "lead": 1,
+        "actual": 164.995,
+        "seasonal_naive": 162.321,
+        "trend_plus_weekday": 165.11369
+      },
+      {
+        "origin": "2024-03-24",
+        "date": "2024-03-26",
+        "lead": 2,
+        "actual": 161.005,
+        "seasonal_naive": 158.219,
+        "trend_plus_weekday": 162.971856
+      },
+      {
+        "origin": "2024-03-24",
+        "date": "2024-03-27",
+        "lead": 3,
+        "actual": 165.68,
+        "seasonal_naive": 156.523,
+        "trend_plus_weekday": 160.257523
+      },
+      {
+        "origin": "2024-03-24",
+        "date": "2024-03-28",
+        "lead": 4,
+        "actual": 161.226,
+        "seasonal_naive": 158.491,
+        "trend_plus_weekday": 160.44494
+      },
+      {
+        "origin": "2024-03-24",
+        "date": "2024-03-29",
+        "lead": 5,
+        "actual": 156.327,
+        "seasonal_naive": 154.552,
+        "trend_plus_weekday": 159.504856
+      },
+      {
+        "origin": "2024-03-24",
+        "date": "2024-03-30",
+        "lead": 6,
+        "actual": 146.427,
+        "seasonal_naive": 147.577,
+        "trend_plus_weekday": 149.196856
+      },
+      {
+        "origin": "2024-03-24",
+        "date": "2024-03-31",
+        "lead": 7,
+        "actual": 149.377,
+        "seasonal_naive": 152.533,
+        "trend_plus_weekday": 152.28544
+      },
+      {
+        "origin": "2024-03-31",
+        "date": "2024-04-01",
+        "lead": 1,
+        "actual": 169.97,
+        "seasonal_naive": 164.995,
+        "trend_plus_weekday": 167.959247
+      },
+      {
+        "origin": "2024-03-31",
+        "date": "2024-04-02",
+        "lead": 2,
+        "actual": 168.737,
+        "seasonal_naive": 161.005,
+        "trend_plus_weekday": 165.675247
+      },
+      {
+        "origin": "2024-03-31",
+        "date": "2024-04-03",
+        "lead": 3,
+        "actual": 164.227,
+        "seasonal_naive": 165.68,
+        "trend_plus_weekday": 163.529324
+      },
+      {
+        "origin": "2024-03-31",
+        "date": "2024-04-04",
+        "lead": 4,
+        "actual": 160.808,
+        "seasonal_naive": 161.226,
+        "trend_plus_weekday": 163.359709
+      },
+      {
+        "origin": "2024-03-31",
+        "date": "2024-04-05",
+        "lead": 5,
+        "actual": 161.803,
+        "seasonal_naive": 156.327,
+        "trend_plus_weekday": 162.115093
+      },
+      {
+        "origin": "2024-03-31",
+        "date": "2024-04-06",
+        "lead": 6,
+        "actual": 157.169,
+        "seasonal_naive": 146.427,
+        "trend_plus_weekday": 151.838478
+      },
+      {
+        "origin": "2024-03-31",
+        "date": "2024-04-07",
+        "lead": 7,
+        "actual": 155.883,
+        "seasonal_naive": 149.377,
+        "trend_plus_weekday": 154.916401
+      },
+      {
+        "origin": "2024-04-07",
+        "date": "2024-04-08",
+        "lead": 1,
+        "actual": 175.869,
+        "seasonal_naive": 169.97,
+        "trend_plus_weekday": 171.382783
+      },
+      {
+        "origin": "2024-04-07",
+        "date": "2024-04-09",
+        "lead": 2,
+        "actual": 172.436,
+        "seasonal_naive": 168.737,
+        "trend_plus_weekday": 169.173854
+      },
+      {
+        "origin": "2024-04-07",
+        "date": "2024-04-10",
+        "lead": 3,
+        "actual": 164.092,
+        "seasonal_naive": 164.227,
+        "trend_plus_weekday": 166.859069
+      },
+      {
+        "origin": "2024-04-07",
+        "date": "2024-04-11",
+        "lead": 4,
+        "actual": 169.216,
+        "seasonal_naive": 160.808,
+        "trend_plus_weekday": 166.457354
+      },
+      {
+        "origin": "2024-04-07",
+        "date": "2024-04-12",
+        "lead": 5,
+        "actual": 167.354,
+        "seasonal_naive": 161.803,
+        "trend_plus_weekday": 165.372711
+      },
+      {
+        "origin": "2024-04-07",
+        "date": "2024-04-13",
+        "lead": 6,
+        "actual": 156.646,
+        "seasonal_naive": 157.169,
+        "trend_plus_weekday": 155.49914
+      },
+      {
+        "origin": "2024-04-07",
+        "date": "2024-04-14",
+        "lead": 7,
+        "actual": 156.935,
+        "seasonal_naive": 155.883,
+        "trend_plus_weekday": 158.265354
+      },
+      {
+        "origin": "2024-04-14",
+        "date": "2024-04-15",
+        "lead": 1,
+        "actual": 176.378,
+        "seasonal_naive": 175.869,
+        "trend_plus_weekday": 174.979997
+      },
+      {
+        "origin": "2024-04-14",
+        "date": "2024-04-16",
+        "lead": 2,
+        "actual": 169.592,
+        "seasonal_naive": 172.436,
+        "trend_plus_weekday": 172.689464
+      },
+      {
+        "origin": "2024-04-14",
+        "date": "2024-04-17",
+        "lead": 3,
+        "actual": 170.628,
+        "seasonal_naive": 164.092,
+        "trend_plus_weekday": 169.972731
+      },
+      {
+        "origin": "2024-04-14",
+        "date": "2024-04-18",
+        "lead": 4,
+        "actual": 170.23,
+        "seasonal_naive": 169.216,
+        "trend_plus_weekday": 169.939397
+      },
+      {
+        "origin": "2024-04-14",
+        "date": "2024-04-19",
+        "lead": 5,
+        "actual": 172.681,
+        "seasonal_naive": 167.354,
+        "trend_plus_weekday": 168.802931
+      },
+      {
+        "origin": "2024-04-14",
+        "date": "2024-04-20",
+        "lead": 6,
+        "actual": 162.507,
+        "seasonal_naive": 156.646,
+        "trend_plus_weekday": 158.873731
+      },
+      {
+        "origin": "2024-04-14",
+        "date": "2024-04-21",
+        "lead": 7,
+        "actual": 160.057,
+        "seasonal_naive": 156.935,
+        "trend_plus_weekday": 161.474797
+      },
+      {
+        "origin": "2024-04-21",
+        "date": "2024-04-22",
+        "lead": 1,
+        "actual": 178.405,
+        "seasonal_naive": 176.378,
+        "trend_plus_weekday": 178.282726
+      },
+      {
+        "origin": "2024-04-21",
+        "date": "2024-04-23",
+        "lead": 2,
+        "actual": 173.279,
+        "seasonal_naive": 169.592,
+        "trend_plus_weekday": 175.711226
+      },
+      {
+        "origin": "2024-04-21",
+        "date": "2024-04-24",
+        "lead": 3,
+        "actual": 177.601,
+        "seasonal_naive": 170.628,
+        "trend_plus_weekday": 173.229038
+      },
+      {
+        "origin": "2024-04-21",
+        "date": "2024-04-25",
+        "lead": 4,
+        "actual": 176.714,
+        "seasonal_naive": 170.23,
+        "trend_plus_weekday": 173.172913
+      },
+      {
+        "origin": "2024-04-21",
+        "date": "2024-04-26",
+        "lead": 5,
+        "actual": 170.588,
+        "seasonal_naive": 172.681,
+        "trend_plus_weekday": 172.260663
+      },
+      {
+        "origin": "2024-04-21",
+        "date": "2024-04-27",
+        "lead": 6,
+        "actual": 163.762,
+        "seasonal_naive": 162.507,
+        "trend_plus_weekday": 162.316163
+      },
+      {
+        "origin": "2024-04-21",
+        "date": "2024-04-28",
+        "lead": 7,
+        "actual": 165.972,
+        "seasonal_naive": 160.057,
+        "trend_plus_weekday": 164.601538
+      },
+      {
+        "origin": "2024-04-28",
+        "date": "2024-04-29",
+        "lead": 1,
+        "actual": 178.773,
+        "seasonal_naive": 178.405,
+        "trend_plus_weekday": 181.548003
+      },
+      {
+        "origin": "2024-04-28",
+        "date": "2024-04-30",
+        "lead": 2,
+        "actual": 181.1,
+        "seasonal_naive": 173.279,
+        "trend_plus_weekday": 178.826238
+      },
+      {
+        "origin": "2024-04-28",
+        "date": "2024-05-01",
+        "lead": 3,
+        "actual": 177.765,
+        "seasonal_naive": 177.601,
+        "trend_plus_weekday": 176.744297
+      },
+      {
+        "origin": "2024-04-28",
+        "date": "2024-05-02",
+        "lead": 4,
+        "actual": 179.129,
+        "seasonal_naive": 176.714,
+        "trend_plus_weekday": 176.639297
+      },
+      {
+        "origin": "2024-04-28",
+        "date": "2024-05-03",
+        "lead": 5,
+        "actual": 175.593,
+        "seasonal_naive": 170.588,
+        "trend_plus_weekday": 175.420356
+      },
+      {
+        "origin": "2024-04-28",
+        "date": "2024-05-04",
+        "lead": 6,
+        "actual": 161.805,
+        "seasonal_naive": 163.762,
+        "trend_plus_weekday": 165.659297
+      },
+      {
+        "origin": "2024-04-28",
+        "date": "2024-05-05",
+        "lead": 7,
+        "actual": 166.843,
+        "seasonal_naive": 165.972,
+        "trend_plus_weekday": 167.940238
+      },
+      {
+        "origin": "2024-05-05",
+        "date": "2024-05-06",
+        "lead": 1,
+        "actual": 180.856,
+        "seasonal_naive": 178.773,
+        "trend_plus_weekday": 184.453934
+      },
+      {
+        "origin": "2024-05-05",
+        "date": "2024-05-07",
+        "lead": 2,
+        "actual": 185.583,
+        "seasonal_naive": 181.1,
+        "trend_plus_weekday": 182.012656
+      },
+      {
+        "origin": "2024-05-05",
+        "date": "2024-05-08",
+        "lead": 3,
+        "actual": 183.63,
+        "seasonal_naive": 177.765,
+        "trend_plus_weekday": 179.8611
+      },
+      {
+        "origin": "2024-05-05",
+        "date": "2024-05-09",
+        "lead": 4,
+        "actual": 182.703,
+        "seasonal_naive": 179.129,
+        "trend_plus_weekday": 179.837712
+      },
+      {
+        "origin": "2024-05-05",
+        "date": "2024-05-10",
+        "lead": 5,
+        "actual": 176.96,
+        "seasonal_naive": 175.593,
+        "trend_plus_weekday": 178.490045
+      },
+      {
+        "origin": "2024-05-05",
+        "date": "2024-05-11",
+        "lead": 6,
+        "actual": 165.413,
+        "seasonal_naive": 161.805,
+        "trend_plus_weekday": 168.505267
+      },
+      {
+        "origin": "2024-05-05",
+        "date": "2024-05-12",
+        "lead": 7,
+        "actual": 174.424,
+        "seasonal_naive": 166.843,
+        "trend_plus_weekday": 170.939378
+      },
+      {
+        "origin": "2024-05-12",
+        "date": "2024-05-13",
+        "lead": 1,
+        "actual": 191.426,
+        "seasonal_naive": 180.856,
+        "trend_plus_weekday": 187.488938
+      },
+      {
+        "origin": "2024-05-12",
+        "date": "2024-05-14",
+        "lead": 2,
+        "actual": 181.985,
+        "seasonal_naive": 185.583,
+        "trend_plus_weekday": 185.424938
+      },
+      {
+        "origin": "2024-05-12",
+        "date": "2024-05-15",
+        "lead": 3,
+        "actual": 183.638,
+        "seasonal_naive": 183.63,
+        "trend_plus_weekday": 183.283832
+      },
+      {
+        "origin": "2024-05-12",
+        "date": "2024-05-16",
+        "lead": 4,
+        "actual": 179.754,
+        "seasonal_naive": 182.703,
+        "trend_plus_weekday": 183.212885
+      },
+      {
+        "origin": "2024-05-12",
+        "date": "2024-05-17",
+        "lead": 5,
+        "actual": 183.735,
+        "seasonal_naive": 176.96,
+        "trend_plus_weekday": 181.633885
+      },
+      {
+        "origin": "2024-05-12",
+        "date": "2024-05-18",
+        "lead": 6,
+        "actual": 174.227,
+        "seasonal_naive": 165.413,
+        "trend_plus_weekday": 171.566885
+      },
+      {
+        "origin": "2024-05-12",
+        "date": "2024-05-19",
+        "lead": 7,
+        "actual": 171.577,
+        "seasonal_naive": 174.424,
+        "trend_plus_weekday": 174.347148
+      },
+      {
+        "origin": "2024-05-19",
+        "date": "2024-05-20",
+        "lead": 1,
+        "actual": 190.802,
+        "seasonal_naive": 191.426,
+        "trend_plus_weekday": 190.783457
+      },
+      {
+        "origin": "2024-05-19",
+        "date": "2024-05-21",
+        "lead": 2,
+        "actual": 188.848,
+        "seasonal_naive": 181.985,
+        "trend_plus_weekday": 188.350607
+      },
+      {
+        "origin": "2024-05-19",
+        "date": "2024-05-22",
+        "lead": 3,
+        "actual": 185.02,
+        "seasonal_naive": 183.638,
+        "trend_plus_weekday": 186.399207
+      },
+      {
+        "origin": "2024-05-19",
+        "date": "2024-05-23",
+        "lead": 4,
+        "actual": 189.329,
+        "seasonal_naive": 179.754,
+        "trend_plus_weekday": 186.137607
+      },
+      {
+        "origin": "2024-05-19",
+        "date": "2024-05-24",
+        "lead": 5,
+        "actual": 184.185,
+        "seasonal_naive": 183.735,
+        "trend_plus_weekday": 184.836607
+      },
+      {
+        "origin": "2024-05-19",
+        "date": "2024-05-25",
+        "lead": 6,
+        "actual": 172.944,
+        "seasonal_naive": 174.227,
+        "trend_plus_weekday": 174.797557
+      },
+      {
+        "origin": "2024-05-19",
+        "date": "2024-05-26",
+        "lead": 7,
+        "actual": 178.014,
+        "seasonal_naive": 171.577,
+        "trend_plus_weekday": 177.306307
+      },
+      {
+        "origin": "2024-05-26",
+        "date": "2024-05-27",
+        "lead": 1,
+        "actual": 195.989,
+        "seasonal_naive": 190.802,
+        "trend_plus_weekday": 193.905885
+      },
+      {
+        "origin": "2024-05-26",
+        "date": "2024-05-28",
+        "lead": 2,
+        "actual": 189.209,
+        "seasonal_naive": 188.848,
+        "trend_plus_weekday": 191.495837
+      },
+      {
+        "origin": "2024-05-26",
+        "date": "2024-05-29",
+        "lead": 3,
+        "actual": 188.544,
+        "seasonal_naive": 185.02,
+        "trend_plus_weekday": 189.455076
+      },
+      {
+        "origin": "2024-05-26",
+        "date": "2024-05-30",
+        "lead": 4,
+        "actual": 193.461,
+        "seasonal_naive": 189.329,
+        "trend_plus_weekday": 189.411123
+      },
+      {
+        "origin": "2024-05-26",
+        "date": "2024-05-31",
+        "lead": 5,
+        "actual": 189.149,
+        "seasonal_naive": 184.185,
+        "trend_plus_weekday": 187.927123
+      },
+      {
+        "origin": "2024-05-26",
+        "date": "2024-06-01",
+        "lead": 6,
+        "actual": 177.905,
+        "seasonal_naive": 172.944,
+        "trend_plus_weekday": 177.830837
+      },
+      {
+        "origin": "2024-05-26",
+        "date": "2024-06-02",
+        "lead": 7,
+        "actual": 180.991,
+        "seasonal_naive": 178.014,
+        "trend_plus_weekday": 180.461552
+      },
+      {
+        "origin": "2024-06-02",
+        "date": "2024-06-03",
+        "lead": 1,
+        "actual": 194.268,
+        "seasonal_naive": 195.989,
+        "trend_plus_weekday": 197.205902
+      },
+      {
+        "origin": "2024-06-02",
+        "date": "2024-06-04",
+        "lead": 2,
+        "actual": 192.548,
+        "seasonal_naive": 189.209,
+        "trend_plus_weekday": 194.597221
+      },
+      {
+        "origin": "2024-06-02",
+        "date": "2024-06-05",
+        "lead": 3,
+        "actual": 191.905,
+        "seasonal_naive": 188.544,
+        "trend_plus_weekday": 192.618993
+      },
+      {
+        "origin": "2024-06-02",
+        "date": "2024-06-06",
+        "lead": 4,
+        "actual": 193.356,
+        "seasonal_naive": 193.461,
+        "trend_plus_weekday": 192.800539
+      },
+      {
+        "origin": "2024-06-02",
+        "date": "2024-06-07",
+        "lead": 5,
+        "actual": 188.941,
+        "seasonal_naive": 189.149,
+        "trend_plus_weekday": 191.187993
+      },
+      {
+        "origin": "2024-06-02",
+        "date": "2024-06-08",
+        "lead": 6,
+        "actual": 179.312,
+        "seasonal_naive": 177.905,
+        "trend_plus_weekday": 181.039539
+      },
+      {
+        "origin": "2024-06-02",
+        "date": "2024-06-09",
+        "lead": 7,
+        "actual": 180.568,
+        "seasonal_naive": 180.991,
+        "trend_plus_weekday": 183.690948
+      },
+      {
+        "origin": "2024-06-09",
+        "date": "2024-06-10",
+        "lead": 1,
+        "actual": 201.499,
+        "seasonal_naive": 194.268,
+        "trend_plus_weekday": 199.970421
+      },
+      {
+        "origin": "2024-06-09",
+        "date": "2024-06-11",
+        "lead": 2,
+        "actual": 195.732,
+        "seasonal_naive": 192.548,
+        "trend_plus_weekday": 197.400377
+      },
+      {
+        "origin": "2024-06-09",
+        "date": "2024-06-12",
+        "lead": 3,
+        "actual": 199.593,
+        "seasonal_naive": 191.905,
+        "trend_plus_weekday": 195.480203
+      },
+      {
+        "origin": "2024-06-09",
+        "date": "2024-06-13",
+        "lead": 4,
+        "actual": 198.677,
+        "seasonal_naive": 193.356,
+        "trend_plus_weekday": 195.716942
+      },
+      {
+        "origin": "2024-06-09",
+        "date": "2024-06-14",
+        "lead": 5,
+        "actual": 190.817,
+        "seasonal_naive": 188.941,
+        "trend_plus_weekday": 193.982551
+      },
+      {
+        "origin": "2024-06-09",
+        "date": "2024-06-15",
+        "lead": 6,
+        "actual": 182.604,
+        "seasonal_naive": 179.312,
+        "trend_plus_weekday": 183.856681
+      },
+      {
+        "origin": "2024-06-09",
+        "date": "2024-06-16",
+        "lead": 7,
+        "actual": 188.502,
+        "seasonal_naive": 180.568,
+        "trend_plus_weekday": 186.447421
+      },
+      {
+        "origin": "2024-06-16",
+        "date": "2024-06-17",
+        "lead": 1,
+        "actual": 201.314,
+        "seasonal_naive": 201.499,
+        "trend_plus_weekday": 203.2158
+      },
+      {
+        "origin": "2024-06-16",
+        "date": "2024-06-18",
+        "lead": 2,
+        "actual": 198.108,
+        "seasonal_naive": 195.732,
+        "trend_plus_weekday": 200.51255
+      },
+      {
+        "origin": "2024-06-16",
+        "date": "2024-06-19",
+        "lead": 3,
+        "actual": 202.984,
+        "seasonal_naive": 199.593,
+        "trend_plus_weekday": 198.833258
+      },
+      {
+        "origin": "2024-06-16",
+        "date": "2024-06-20",
+        "lead": 4,
+        "actual": 199.518,
+        "seasonal_naive": 198.677,
+        "trend_plus_weekday": 199.021967
+      },
+      {
+        "origin": "2024-06-16",
+        "date": "2024-06-21",
+        "lead": 5,
+        "actual": 197.181,
+        "seasonal_naive": 190.817,
+        "trend_plus_weekday": 197.032342
+      },
+      {
+        "origin": "2024-06-16",
+        "date": "2024-06-22",
+        "lead": 6,
+        "actual": 190.127,
+        "seasonal_naive": 182.604,
+        "trend_plus_weekday": 186.986175
+      },
+      {
+        "origin": "2024-06-16",
+        "date": "2024-06-23",
+        "lead": 7,
+        "actual": 192.76,
+        "seasonal_naive": 188.502,
+        "trend_plus_weekday": 189.714717
+      }
+    ]
   },
   "next_seven_days": [
     {

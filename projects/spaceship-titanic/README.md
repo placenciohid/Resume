@@ -1,37 +1,49 @@
-# Spaceship Titanic
+# Tabular prediction on unseen passenger groups
 
-## Question and approach
+**A split should reflect who the model will be asked to predict, not just produce two random sets of rows.**
 
-Predict a binary target from mixed numeric and categorical features. Feature preparation and supervised prediction in a Kaggle setting.
+Spaceship Titanic is a Kaggle classification exercise with mixed numeric and categorical passenger records. My original notebooks compare several classifiers, feature engineering, tuning, and ensembles. The maintained analysis focuses on a specific evaluation question: how do two understandable baselines perform on passengers from travel groups absent from training?
 
-## Inspect the original work
+## Why groups change the problem
 
-**[Open the notebook](legacy/Spaceship%20Titanic%20-%20Kaggle%20Competition.ipynb)**. It contains 93 code cells, with the original analysis and saved outputs. Those outputs are historical experiment evidence, not a newly reproduced benchmark.
+Passenger IDs contain a travel-group prefix. People in a group can share contextual information. If related passengers appear in both training and validation, a model can benefit from group similarity even when the intended application concerns entirely new groups.
 
-Main imports found in the notebook: `graphviz, io, keras.layers, keras.models, keras.wrappers.scikit_learn, matplotlib.pyplot, numpy, pandas, plotly.graph_objects, plotly.subplots, pydot, seaborn, shap, sklearn, sklearn.ensemble, sklearn.linear_model, sklearn.metrics, sklearn.model_selection, sklearn.neighbors, sklearn.preprocessing, sklearn.svm, sklearn.tree, tensorflow, tensorflow.keras, warnings, xgboost`.
+The new [analysis](analyze.py) holds out 20% of distinct groups with a fixed seed. It uses cabin deck and side, origin, destination, age, spending, VIP, and cryosleep fields. Passenger IDs and names are excluded from the predictors.
 
-### Code excerpt from the notebook
+## Keep preparation inside the pipeline
 
-```python
-# Embedding the name based on length and number of vowels
-def name_embedding(name):
-    name = name.split(' ')
-    name = name[0] + name[1]
-    length = len(name)
-    vowels = sum(name.count(w) for w in 'aeiou')
-    return length, vowels
+The numeric branch imputes training medians and standardizes values. The categorical branch imputes a training-set mode and one-hot encodes known categories, tolerating unseen categories at prediction. Both branches are fitted only on training rows.
 
-# Create the new variables
-train['NameLength'], train['NameVowels'] = zip(*train['Name'].apply(name_embedding))
-test['NameLength'], test['NameVowels'] = zip(*test['Name'].apply(name_embedding))
+Two fixed models share this preparation: logistic regression and a random forest with 150 trees, maximum depth ten, and at least three samples per leaf. The comparison does not search hyperparameters against the holdout or generate a new competition submission.
 
-# Dropping the Name column
-train.drop('Name', axis=1, inplace=True)
-test.drop('Name', axis=1, inplace=True)
+![Comparison on a holdout of unseen passenger groups](figures/evaluation.png)
+
+## Reproduced result
+
+The split contains **6,930 training passengers and 1,763 held-out passengers**, with **zero group overlap**.
+
+| Model | Accuracy | ROC AUC | Brier score (lower is better) |
+| --- | --- | --- | --- |
+| Logistic Regression | 79.35% | 0.8775 | 0.1419 |
+| Random Forest | 80.83% | 0.8919 | 0.1360 |
+
+The forest makes 338 classification errors on this holdout, versus 364 for logistic regression. Its ROC AUC and Brier score also improve, supporting a nonlinear model under this protocol. This is local validation, not a Kaggle leaderboard score.
+
+## What the earlier experiments add
+
+The [longer original notebook](legacy/Spaceship%20Titanic%20-%20Kaggle%20Competition.ipynb) explores logistic regression, forests, boosting, neural networks, tuning, and voting. A [second notebook](legacy/Spaceship%20Titanic%20-%20Kaggle.ipynb) evaluates additional boosting and stacking approaches. Their saved results remain useful evidence of experimentation, but use different preprocessing and split protocols.
+
+The original tables also illustrate a common practical issue: model metrics can be copied or overwritten during notebook experimentation. The maintained script computes its summary from each fitted model in one pass, records a source-data hash, and writes a complete JSON result. That makes it easier to trace a claim back to an executable calculation.
+
+## Next question: what is driving the errors?
+
+I would inspect performance by cabin category, age band, missing-data pattern, and travel-group size before adding another ensemble. Repeating the grouped split would show whether the observed advantage depends strongly on which groups were held out. If the deployment question instead concerned an additional member of a known group, I would state that different objective and design the validation accordingly.
+
+## Reproduce
+
+```bash
+python -m pip install -r requirements-analysis.txt
+python projects/spaceship-titanic/analyze.py
 ```
 
-## Data and reproducibility
-
-The notebook is preserved as submitted in the original portfolio. It may refer to local files or external datasets not present here. Dependencies are not pinned and the saved results have not been rerun. Review data-loading cells before attempting execution. New reproducible examples are listed in the repository root README; this historical notebook is not presented as one of them.
-
-[Additional original notebook](legacy/Spaceship%20Titanic%20-%20Kaggle.ipynb)
+The script reads the existing training CSV, leaves the unlabeled competition test data untouched, and prints [these metrics](analysis-results.json). The [Kaggle competition](https://www.kaggle.com/competitions/spaceship-titanic) supplies the original task and data context. No claim is made about deploying a fictional passenger predictor; the transferable work is the data contract, evaluation design, and comparison of model complexity.

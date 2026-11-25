@@ -1,0 +1,68 @@
+{
+  "dataset": {
+    "file": "data/legacy/train.csv",
+    "sha256": "92515331df73abce3b7c01dba35c33971027268bd84609bc6593ca43b18e649f",
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2"
+  },
+  "train_rows": 6930,
+  "test_rows": 1763,
+  "group_overlap": 0,
+  "input_features": [
+    "HomePlanet",
+    "CryoSleep",
+    "Destination",
+    "Age",
+    "VIP",
+    "RoomService",
+    "FoodCourt",
+    "ShoppingMall",
+    "Spa",
+    "VRDeck",
+    "CabinDeck",
+    "CabinSide"
+  ],
+  "split": "20% of passenger groups held out, seed 42",
+  "test_positive_rate": 0.518434,
+  "selection": "Fixed baselines; no tuning against the holdout",
+  "holdout": {
+    "logistic_regression": {
+      "accuracy": 0.793534,
+      "balanced_accuracy": 0.792624,
+      "f1": 0.80409,
+      "roc_auc": 0.877529,
+      "average_precision": 0.891908,
+      "brier_score": 0.141919,
+      "confusion_matrix": [
+        [
+          652,
+          197
+        ],
+        [
+          167,
+          747
+        ]
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.808281,
+      "balanced_accuracy": 0.808481,
+      "f1": 0.812846,
+      "roc_auc": 0.89186,
+      "average_precision": 0.905059,
+      "brier_score": 0.13601,
+      "confusion_matrix": [
+        [
+          691,
+          158
+        ],
+        [
+          180,
+          734
+        ]
+      ]
+    }
+  }
+}

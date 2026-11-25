@@ -25,6 +25,10 @@ def invoice_index(invoices):
 
 
 def reconcile(invoices, remittances, tolerance=Decimal('0.01')):
+    if tolerance < 0:
+        raise ValueError('Tolerance must be nonnegative')
+    if len({r['id'] for r in remittances}) != len(remittances):
+        raise ValueError('Duplicate remittance identifiers')
     lookup = invoice_index(invoices)
     claimed = set()
     rows = []

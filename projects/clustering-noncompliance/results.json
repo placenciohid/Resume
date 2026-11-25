@@ -1,0 +1,34 @@
+{
+  "evidence": "Arithmetic audit of a hypothetical exercise and saved original notebook statistics; source cluster.csv is unavailable",
+  "independent_rows": {
+    "estimate": 3.60038876098929,
+    "standard_error": 0.09392981423715299,
+    "normal_95pct_interval": [
+      3.41628632508447,
+      3.78449119689411
+    ]
+  },
+  "store_level": {
+    "estimate": 3.6003887609905263,
+    "standard_error": 2.0873664934199136,
+    "normal_95pct_interval": [
+      -0.4908495661125043,
+      7.691627088093557
+    ]
+  },
+  "email_vs_control": {
+    "intention_to_treat": 0.02,
+    "change_in_uptake": 0.4,
+    "wald_ratio": 0.05
+  },
+  "email_call_vs_control": {
+    "intention_to_treat": 0.04,
+    "change_in_uptake": 0.6,
+    "wald_ratio": 0.06666667
+  },
+  "email_call_vs_email": {
+    "intention_to_treat": 0.02,
+    "change_in_uptake": 0.2,
+    "wald_ratio": 0.1
+  }
+}

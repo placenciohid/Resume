@@ -1,0 +1,714 @@
+{
+  "evidence": "Simulation: 60 arrivals at 30 fps, fixed 60 ms service; not a hardware benchmark",
+  "fifo": {
+    "policy": "fifo",
+    "input_frames": 60,
+    "processed_frames": 60,
+    "dropped_frames": 0,
+    "peak_waiting_frames": 27,
+    "mean_latency_ms": 846.667,
+    "p95_latency_ms": 1553.333,
+    "max_latency_ms": 1633.333,
+    "frames": [
+      {
+        "frame_id": 0,
+        "captured_ms": 0.0,
+        "started_ms": 0.0,
+        "displayed_ms": 60.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 1,
+        "captured_ms": 33.333,
+        "started_ms": 60.0,
+        "displayed_ms": 120.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 2,
+        "captured_ms": 66.667,
+        "started_ms": 120.0,
+        "displayed_ms": 180.0,
+        "latency_ms": 113.333
+      },
+      {
+        "frame_id": 3,
+        "captured_ms": 100.0,
+        "started_ms": 180.0,
+        "displayed_ms": 240.0,
+        "latency_ms": 140.0
+      },
+      {
+        "frame_id": 4,
+        "captured_ms": 133.333,
+        "started_ms": 240.0,
+        "displayed_ms": 300.0,
+        "latency_ms": 166.667
+      },
+      {
+        "frame_id": 5,
+        "captured_ms": 166.667,
+        "started_ms": 300.0,
+        "displayed_ms": 360.0,
+        "latency_ms": 193.333
+      },
+      {
+        "frame_id": 6,
+        "captured_ms": 200.0,
+        "started_ms": 360.0,
+        "displayed_ms": 420.0,
+        "latency_ms": 220.0
+      },
+      {
+        "frame_id": 7,
+        "captured_ms": 233.333,
+        "started_ms": 420.0,
+        "displayed_ms": 480.0,
+        "latency_ms": 246.667
+      },
+      {
+        "frame_id": 8,
+        "captured_ms": 266.667,
+        "started_ms": 480.0,
+        "displayed_ms": 540.0,
+        "latency_ms": 273.333
+      },
+      {
+        "frame_id": 9,
+        "captured_ms": 300.0,
+        "started_ms": 540.0,
+        "displayed_ms": 600.0,
+        "latency_ms": 300.0
+      },
+      {
+        "frame_id": 10,
+        "captured_ms": 333.333,
+        "started_ms": 600.0,
+        "displayed_ms": 660.0,
+        "latency_ms": 326.667
+      },
+      {
+        "frame_id": 11,
+        "captured_ms": 366.667,
+        "started_ms": 660.0,
+        "displayed_ms": 720.0,
+        "latency_ms": 353.333
+      },
+      {
+        "frame_id": 12,
+        "captured_ms": 400.0,
+        "started_ms": 720.0,
+        "displayed_ms": 780.0,
+        "latency_ms": 380.0
+      },
+      {
+        "frame_id": 13,
+        "captured_ms": 433.333,
+        "started_ms": 780.0,
+        "displayed_ms": 840.0,
+        "latency_ms": 406.667
+      },
+      {
+        "frame_id": 14,
+        "captured_ms": 466.667,
+        "started_ms": 840.0,
+        "displayed_ms": 900.0,
+        "latency_ms": 433.333
+      },
+      {
+        "frame_id": 15,
+        "captured_ms": 500.0,
+        "started_ms": 900.0,
+        "displayed_ms": 960.0,
+        "latency_ms": 460.0
+      },
+      {
+        "frame_id": 16,
+        "captured_ms": 533.333,
+        "started_ms": 960.0,
+        "displayed_ms": 1020.0,
+        "latency_ms": 486.667
+      },
+      {
+        "frame_id": 17,
+        "captured_ms": 566.667,
+        "started_ms": 1020.0,
+        "displayed_ms": 1080.0,
+        "latency_ms": 513.333
+      },
+      {
+        "frame_id": 18,
+        "captured_ms": 600.0,
+        "started_ms": 1080.0,
+        "displayed_ms": 1140.0,
+        "latency_ms": 540.0
+      },
+      {
+        "frame_id": 19,
+        "captured_ms": 633.333,
+        "started_ms": 1140.0,
+        "displayed_ms": 1200.0,
+        "latency_ms": 566.667
+      },
+      {
+        "frame_id": 20,
+        "captured_ms": 666.667,
+        "started_ms": 1200.0,
+        "displayed_ms": 1260.0,
+        "latency_ms": 593.333
+      },
+      {
+        "frame_id": 21,
+        "captured_ms": 700.0,
+        "started_ms": 1260.0,
+        "displayed_ms": 1320.0,
+        "latency_ms": 620.0
+      },
+      {
+        "frame_id": 22,
+        "captured_ms": 733.333,
+        "started_ms": 1320.0,
+        "displayed_ms": 1380.0,
+        "latency_ms": 646.667
+      },
+      {
+        "frame_id": 23,
+        "captured_ms": 766.667,
+        "started_ms": 1380.0,
+        "displayed_ms": 1440.0,
+        "latency_ms": 673.333
+      },
+      {
+        "frame_id": 24,
+        "captured_ms": 800.0,
+        "started_ms": 1440.0,
+        "displayed_ms": 1500.0,
+        "latency_ms": 700.0
+      },
+      {
+        "frame_id": 25,
+        "captured_ms": 833.333,
+        "started_ms": 1500.0,
+        "displayed_ms": 1560.0,
+        "latency_ms": 726.667
+      },
+      {
+        "frame_id": 26,
+        "captured_ms": 866.667,
+        "started_ms": 1560.0,
+        "displayed_ms": 1620.0,
+        "latency_ms": 753.333
+      },
+      {
+        "frame_id": 27,
+        "captured_ms": 900.0,
+        "started_ms": 1620.0,
+        "displayed_ms": 1680.0,
+        "latency_ms": 780.0
+      },
+      {
+        "frame_id": 28,
+        "captured_ms": 933.333,
+        "started_ms": 1680.0,
+        "displayed_ms": 1740.0,
+        "latency_ms": 806.667
+      },
+      {
+        "frame_id": 29,
+        "captured_ms": 966.667,
+        "started_ms": 1740.0,
+        "displayed_ms": 1800.0,
+        "latency_ms": 833.333
+      },
+      {
+        "frame_id": 30,
+        "captured_ms": 1000.0,
+        "started_ms": 1800.0,
+        "displayed_ms": 1860.0,
+        "latency_ms": 860.0
+      },
+      {
+        "frame_id": 31,
+        "captured_ms": 1033.333,
+        "started_ms": 1860.0,
+        "displayed_ms": 1920.0,
+        "latency_ms": 886.667
+      },
+      {
+        "frame_id": 32,
+        "captured_ms": 1066.667,
+        "started_ms": 1920.0,
+        "displayed_ms": 1980.0,
+        "latency_ms": 913.333
+      },
+      {
+        "frame_id": 33,
+        "captured_ms": 1100.0,
+        "started_ms": 1980.0,
+        "displayed_ms": 2040.0,
+        "latency_ms": 940.0
+      },
+      {
+        "frame_id": 34,
+        "captured_ms": 1133.333,
+        "started_ms": 2040.0,
+        "displayed_ms": 2100.0,
+        "latency_ms": 966.667
+      },
+      {
+        "frame_id": 35,
+        "captured_ms": 1166.667,
+        "started_ms": 2100.0,
+        "displayed_ms": 2160.0,
+        "latency_ms": 993.333
+      },
+      {
+        "frame_id": 36,
+        "captured_ms": 1200.0,
+        "started_ms": 2160.0,
+        "displayed_ms": 2220.0,
+        "latency_ms": 1020.0
+      },
+      {
+        "frame_id": 37,
+        "captured_ms": 1233.333,
+        "started_ms": 2220.0,
+        "displayed_ms": 2280.0,
+        "latency_ms": 1046.667
+      },
+      {
+        "frame_id": 38,
+        "captured_ms": 1266.667,
+        "started_ms": 2280.0,
+        "displayed_ms": 2340.0,
+        "latency_ms": 1073.333
+      },
+      {
+        "frame_id": 39,
+        "captured_ms": 1300.0,
+        "started_ms": 2340.0,
+        "displayed_ms": 2400.0,
+        "latency_ms": 1100.0
+      },
+      {
+        "frame_id": 40,
+        "captured_ms": 1333.333,
+        "started_ms": 2400.0,
+        "displayed_ms": 2460.0,
+        "latency_ms": 1126.667
+      },
+      {
+        "frame_id": 41,
+        "captured_ms": 1366.667,
+        "started_ms": 2460.0,
+        "displayed_ms": 2520.0,
+        "latency_ms": 1153.333
+      },
+      {
+        "frame_id": 42,
+        "captured_ms": 1400.0,
+        "started_ms": 2520.0,
+        "displayed_ms": 2580.0,
+        "latency_ms": 1180.0
+      },
+      {
+        "frame_id": 43,
+        "captured_ms": 1433.333,
+        "started_ms": 2580.0,
+        "displayed_ms": 2640.0,
+        "latency_ms": 1206.667
+      },
+      {
+        "frame_id": 44,
+        "captured_ms": 1466.667,
+        "started_ms": 2640.0,
+        "displayed_ms": 2700.0,
+        "latency_ms": 1233.333
+      },
+      {
+        "frame_id": 45,
+        "captured_ms": 1500.0,
+        "started_ms": 2700.0,
+        "displayed_ms": 2760.0,
+        "latency_ms": 1260.0
+      },
+      {
+        "frame_id": 46,
+        "captured_ms": 1533.333,
+        "started_ms": 2760.0,
+        "displayed_ms": 2820.0,
+        "latency_ms": 1286.667
+      },
+      {
+        "frame_id": 47,
+        "captured_ms": 1566.667,
+        "started_ms": 2820.0,
+        "displayed_ms": 2880.0,
+        "latency_ms": 1313.333
+      },
+      {
+        "frame_id": 48,
+        "captured_ms": 1600.0,
+        "started_ms": 2880.0,
+        "displayed_ms": 2940.0,
+        "latency_ms": 1340.0
+      },
+      {
+        "frame_id": 49,
+        "captured_ms": 1633.333,
+        "started_ms": 2940.0,
+        "displayed_ms": 3000.0,
+        "latency_ms": 1366.667
+      },
+      {
+        "frame_id": 50,
+        "captured_ms": 1666.667,
+        "started_ms": 3000.0,
+        "displayed_ms": 3060.0,
+        "latency_ms": 1393.333
+      },
+      {
+        "frame_id": 51,
+        "captured_ms": 1700.0,
+        "started_ms": 3060.0,
+        "displayed_ms": 3120.0,
+        "latency_ms": 1420.0
+      },
+      {
+        "frame_id": 52,
+        "captured_ms": 1733.333,
+        "started_ms": 3120.0,
+        "displayed_ms": 3180.0,
+        "latency_ms": 1446.667
+      },
+      {
+        "frame_id": 53,
+        "captured_ms": 1766.667,
+        "started_ms": 3180.0,
+        "displayed_ms": 3240.0,
+        "latency_ms": 1473.333
+      },
+      {
+        "frame_id": 54,
+        "captured_ms": 1800.0,
+        "started_ms": 3240.0,
+        "displayed_ms": 3300.0,
+        "latency_ms": 1500.0
+      },
+      {
+        "frame_id": 55,
+        "captured_ms": 1833.333,
+        "started_ms": 3300.0,
+        "displayed_ms": 3360.0,
+        "latency_ms": 1526.667
+      },
+      {
+        "frame_id": 56,
+        "captured_ms": 1866.667,
+        "started_ms": 3360.0,
+        "displayed_ms": 3420.0,
+        "latency_ms": 1553.333
+      },
+      {
+        "frame_id": 57,
+        "captured_ms": 1900.0,
+        "started_ms": 3420.0,
+        "displayed_ms": 3480.0,
+        "latency_ms": 1580.0
+      },
+      {
+        "frame_id": 58,
+        "captured_ms": 1933.333,
+        "started_ms": 3480.0,
+        "displayed_ms": 3540.0,
+        "latency_ms": 1606.667
+      },
+      {
+        "frame_id": 59,
+        "captured_ms": 1966.667,
+        "started_ms": 3540.0,
+        "displayed_ms": 3600.0,
+        "latency_ms": 1633.333
+      }
+    ],
+    "dropped_ids": []
+  },
+  "latest": {
+    "policy": "latest",
+    "input_frames": 60,
+    "processed_frames": 34,
+    "dropped_frames": 26,
+    "peak_waiting_frames": 1,
+    "mean_latency_ms": 73.529,
+    "p95_latency_ms": 86.667,
+    "max_latency_ms": 86.667,
+    "frames": [
+      {
+        "frame_id": 0,
+        "captured_ms": 0.0,
+        "started_ms": 0.0,
+        "displayed_ms": 60.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 1,
+        "captured_ms": 33.333,
+        "started_ms": 60.0,
+        "displayed_ms": 120.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 3,
+        "captured_ms": 100.0,
+        "started_ms": 120.0,
+        "displayed_ms": 180.0,
+        "latency_ms": 80.0
+      },
+      {
+        "frame_id": 5,
+        "captured_ms": 166.667,
+        "started_ms": 180.0,
+        "displayed_ms": 240.0,
+        "latency_ms": 73.333
+      },
+      {
+        "frame_id": 7,
+        "captured_ms": 233.333,
+        "started_ms": 240.0,
+        "displayed_ms": 300.0,
+        "latency_ms": 66.667
+      },
+      {
+        "frame_id": 9,
+        "captured_ms": 300.0,
+        "started_ms": 300.0,
+        "displayed_ms": 360.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 10,
+        "captured_ms": 333.333,
+        "started_ms": 360.0,
+        "displayed_ms": 420.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 12,
+        "captured_ms": 400.0,
+        "started_ms": 420.0,
+        "displayed_ms": 480.0,
+        "latency_ms": 80.0
+      },
+      {
+        "frame_id": 14,
+        "captured_ms": 466.667,
+        "started_ms": 480.0,
+        "displayed_ms": 540.0,
+        "latency_ms": 73.333
+      },
+      {
+        "frame_id": 16,
+        "captured_ms": 533.333,
+        "started_ms": 540.0,
+        "displayed_ms": 600.0,
+        "latency_ms": 66.667
+      },
+      {
+        "frame_id": 18,
+        "captured_ms": 600.0,
+        "started_ms": 600.0,
+        "displayed_ms": 660.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 19,
+        "captured_ms": 633.333,
+        "started_ms": 660.0,
+        "displayed_ms": 720.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 21,
+        "captured_ms": 700.0,
+        "started_ms": 720.0,
+        "displayed_ms": 780.0,
+        "latency_ms": 80.0
+      },
+      {
+        "frame_id": 23,
+        "captured_ms": 766.667,
+        "started_ms": 780.0,
+        "displayed_ms": 840.0,
+        "latency_ms": 73.333
+      },
+      {
+        "frame_id": 25,
+        "captured_ms": 833.333,
+        "started_ms": 840.0,
+        "displayed_ms": 900.0,
+        "latency_ms": 66.667
+      },
+      {
+        "frame_id": 27,
+        "captured_ms": 900.0,
+        "started_ms": 900.0,
+        "displayed_ms": 960.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 28,
+        "captured_ms": 933.333,
+        "started_ms": 960.0,
+        "displayed_ms": 1020.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 30,
+        "captured_ms": 1000.0,
+        "started_ms": 1020.0,
+        "displayed_ms": 1080.0,
+        "latency_ms": 80.0
+      },
+      {
+        "frame_id": 32,
+        "captured_ms": 1066.667,
+        "started_ms": 1080.0,
+        "displayed_ms": 1140.0,
+        "latency_ms": 73.333
+      },
+      {
+        "frame_id": 34,
+        "captured_ms": 1133.333,
+        "started_ms": 1140.0,
+        "displayed_ms": 1200.0,
+        "latency_ms": 66.667
+      },
+      {
+        "frame_id": 36,
+        "captured_ms": 1200.0,
+        "started_ms": 1200.0,
+        "displayed_ms": 1260.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 37,
+        "captured_ms": 1233.333,
+        "started_ms": 1260.0,
+        "displayed_ms": 1320.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 39,
+        "captured_ms": 1300.0,
+        "started_ms": 1320.0,
+        "displayed_ms": 1380.0,
+        "latency_ms": 80.0
+      },
+      {
+        "frame_id": 41,
+        "captured_ms": 1366.667,
+        "started_ms": 1380.0,
+        "displayed_ms": 1440.0,
+        "latency_ms": 73.333
+      },
+      {
+        "frame_id": 43,
+        "captured_ms": 1433.333,
+        "started_ms": 1440.0,
+        "displayed_ms": 1500.0,
+        "latency_ms": 66.667
+      },
+      {
+        "frame_id": 45,
+        "captured_ms": 1500.0,
+        "started_ms": 1500.0,
+        "displayed_ms": 1560.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 46,
+        "captured_ms": 1533.333,
+        "started_ms": 1560.0,
+        "displayed_ms": 1620.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 48,
+        "captured_ms": 1600.0,
+        "started_ms": 1620.0,
+        "displayed_ms": 1680.0,
+        "latency_ms": 80.0
+      },
+      {
+        "frame_id": 50,
+        "captured_ms": 1666.667,
+        "started_ms": 1680.0,
+        "displayed_ms": 1740.0,
+        "latency_ms": 73.333
+      },
+      {
+        "frame_id": 52,
+        "captured_ms": 1733.333,
+        "started_ms": 1740.0,
+        "displayed_ms": 1800.0,
+        "latency_ms": 66.667
+      },
+      {
+        "frame_id": 54,
+        "captured_ms": 1800.0,
+        "started_ms": 1800.0,
+        "displayed_ms": 1860.0,
+        "latency_ms": 60.0
+      },
+      {
+        "frame_id": 55,
+        "captured_ms": 1833.333,
+        "started_ms": 1860.0,
+        "displayed_ms": 1920.0,
+        "latency_ms": 86.667
+      },
+      {
+        "frame_id": 57,
+        "captured_ms": 1900.0,
+        "started_ms": 1920.0,
+        "displayed_ms": 1980.0,
+        "latency_ms": 80.0
+      },
+      {
+        "frame_id": 59,
+        "captured_ms": 1966.667,
+        "started_ms": 1980.0,
+        "displayed_ms": 2040.0,
+        "latency_ms": 73.333
+      }
+    ],
+    "dropped_ids": [
+      2,
+      4,
+      6,
+      8,
+      11,
+      13,
+      15,
+      17,
+      20,
+      22,
+      24,
+      26,
+      29,
+      31,
+      33,
+      35,
+      38,
+      40,
+      42,
+      44,
+      47,
+      49,
+      51,
+      53,
+      56,
+      58
+    ]
+  }
+}

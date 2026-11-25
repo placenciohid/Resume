@@ -1,0 +1,37 @@
+{
+  "dataset": {
+    "file": "data/legacy/reviews.csv",
+    "sha256": "6d4f52a7ae6b257ed736950a3237c8b0b53175a6dccafeb63716e8448d23d5bf",
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2"
+  },
+  "raw_rows": 12495,
+  "retained_rows": 10504,
+  "target": "4-5 stars positive; 1-2 stars negative; neutral 3-star rows excluded",
+  "train_rows": 8428,
+  "test_rows": 2076,
+  "duplicate_text_groups_across_split": 0,
+  "test_positive_rate": 0.526493,
+  "vocabulary_size": 15035,
+  "selection": "Fixed TF-IDF + logistic baseline; grouped normalized-text holdout; threshold 0.5",
+  "holdout": {
+    "accuracy": 0.855973,
+    "balanced_accuracy": 0.85631,
+    "f1": 0.861382,
+    "roc_auc": 0.933598,
+    "average_precision": 0.937391,
+    "brier_score": 0.111069,
+    "confusion_matrix": [
+      [
+        848,
+        135
+      ],
+      [
+        164,
+        929
+      ]
+    ]
+  }
+}

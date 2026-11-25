@@ -1,0 +1,70 @@
+{
+  "dataset": {
+    "file": "data/public/winequality-red.csv",
+    "sha256": "4a402cf041b025d4566d954c3b9ba8635a3a8a01e039005d97d6a710278cf05e",
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2"
+  },
+  "target": "sensory quality >= 6",
+  "input_features": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ],
+  "train_rows": 1279,
+  "test_rows": 320,
+  "group_overlap": 0,
+  "test_positive_rate": 0.5625,
+  "selected_alpha": 1.0,
+  "training_cv_balanced_accuracy": 0.754856,
+  "fitted_network_iterations": 59,
+  "selection": "Three training-only grouped folds; fixed (12,8) hidden layers; threshold 0.5",
+  "holdout": {
+    "logistic_regression": {
+      "accuracy": 0.740625,
+      "balanced_accuracy": 0.740873,
+      "f1": 0.762178,
+      "roc_auc": 0.804048,
+      "average_precision": 0.832687,
+      "brier_score": 0.179,
+      "confusion_matrix": [
+        [
+          104,
+          36
+        ],
+        [
+          47,
+          133
+        ]
+      ]
+    },
+    "neural_network": {
+      "accuracy": 0.725,
+      "balanced_accuracy": 0.726984,
+      "f1": 0.744186,
+      "roc_auc": 0.798016,
+      "average_precision": 0.836367,
+      "brier_score": 0.183669,
+      "confusion_matrix": [
+        [
+          104,
+          36
+        ],
+        [
+          52,
+          128
+        ]
+      ]
+    }
+  }
+}

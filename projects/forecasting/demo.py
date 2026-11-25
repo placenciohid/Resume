@@ -43,26 +43,40 @@ def predict(model, future_dates):
 
 
 def metrics(actual, predicted):
+    if len(actual) != len(predicted):
+        raise ValueError('Each observation requires exactly one prediction')
     errors = [abs(a-p) for a,p in zip(actual,predicted)]
     if not errors: raise ValueError('Evaluation must contain observations')
     return {'mae': round(mean(errors), 4),
-            'wape': round(sum(errors)/sum(abs(a) for a in actual), 4)}
+            'wape': round(sum(errors)/sum(abs(a) for a in actual), 4) if any(actual) else None}
 
 
 def backtest(rows, initial=84, horizon=7):
+    if initial < 14 or horizon < 1 or len(rows) < initial+horizon:
+        raise ValueError('Require two training weeks and at least one complete forecast window')
+    dates = [date.fromisoformat(r['date']) for r in rows]
+    if any(b-a != timedelta(days=1) for a,b in zip(dates, dates[1:])):
+        raise ValueError('Daily observations must be complete, unique, and ordered')
     actual, seasonal, trend = [], [], []
-    folds = []
+    folds, predictions = [], []
     for origin in range(initial, len(rows)-horizon+1, horizon):
         history, future = rows[:origin], rows[origin:origin+horizon]
         model = fit(history)  # Every fold is fitted again, using past rows only.
         expected = predict(model, [r['date'] for r in future])
         actual.extend(r['value'] for r in future)
-        seasonal.extend(r['value'] for r in history[-7:])
+        baseline = [history[-7+i%7]['value'] for i in range(horizon)]
+        seasonal.extend(baseline)
         trend.extend(r['forecast'] for r in expected)
+        for lead,(observed,forecast,naive) in enumerate(zip(future,expected,baseline),1):
+            predictions.append({'origin':history[-1]['date'], 'date':observed['date'],
+                                'lead':lead, 'actual':observed['value'],
+                                'seasonal_naive':round(naive,6),
+                                'trend_plus_weekday':round(forecast['forecast'],6)})
         folds.append({'trained_through': history[-1]['date'], 'predict_from': future[0]['date'],
                       'predict_through': future[-1]['date']})
     return {'folds': folds, 'forecasted_days': len(actual),
-            'seasonal_naive': metrics(actual, seasonal), 'trend_plus_weekday': metrics(actual, trend)}
+            'seasonal_naive': metrics(actual, seasonal), 'trend_plus_weekday': metrics(actual, trend),
+            'predictions': predictions}
 
 
 def run():

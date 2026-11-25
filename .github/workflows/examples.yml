@@ -21,3 +21,22 @@ jobs:
       - run: python projects/forecasting/demo.py
       - run: python projects/knowledge-search/demo.py
       - run: python projects/commercial-reporting/demo.py
+      - run: python tools/check_links.py
+  real-data-analyses:
+    runs-on: ubuntu-latest
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: requirements-analysis.txt
+      - run: python -m pip install -r requirements-analysis.txt
+      - run: python -m unittest discover -s analysis_tests -v
+      - run: python projects/play-store-reviews/analyze.py
+      - run: python projects/wine-clustering/analyze.py
+      - run: python projects/wine-neural-networks/analyze.py
+      - run: python projects/spaceship-titanic/analyze.py
