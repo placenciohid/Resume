@@ -27,13 +27,15 @@ def build_rows(records, events, horizon=7):
     return rows
 
 
-def split_and_scale(rows, split_date):
+def split_and_scale(rows, split_date, horizon=7):
+    if horizon < 1:
+        raise ValueError('Outcome horizon must be positive')
     train = [dict(r) for r in rows if r['record_date'] < split_date]
     validation = [dict(r) for r in rows if r['record_date'] >= split_date]
     if len(train) < 2:
         raise ValueError('At least two training rows are needed')
     # Purge training labels whose seven-day outcome window reaches validation.
-    if any(date.fromisoformat(r['record_date']) + timedelta(days=7) >= date.fromisoformat(split_date) for r in train):
+    if any(date.fromisoformat(r['record_date']) + timedelta(days=horizon) >= date.fromisoformat(split_date) for r in train):
         raise ValueError('Training outcome windows overlap validation; add a temporal gap')
     center = mean(r['numeric_feature'] for r in train)
     scale = stdev(r['numeric_feature'] for r in train) or 1.0

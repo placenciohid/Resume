@@ -1,79 +1,85 @@
-# Dario Placencio — Data Science & Operations Portfolio
+# Darío Placencio
+### Operational excellence · Data science · Mining & commercial services
 
-Selected technical work in machine learning, data engineering, and optimization.
-I work in Operational Excellence at Rio Tinto, with earlier experience in data science and process improvement at Rio Tinto and BHP.
+I work with operations and commercial teams to improve how work is planned, understood, and carried out. My experience spans process improvement and digital delivery at BHP, data science in Rio Tinto's Borates Digital team, and operational excellence in Commercial Services.
 
-**[Website](https://placenciohid.github.io/) · [Experience](https://placenciohid.github.io/aboutme.html) · [LinkedIn](https://www.linkedin.com/in/darioplacencio/)**
+This portfolio connects that experience with code a reviewer can inspect: forecasting evaluation, payment reconciliation, evidence retrieval, optimization, and machine learning. The project articles explain the business or analytical question, the implementation choices, the results, and what those results support.
+
+**[Portfolio website](https://placenciohid.github.io/) · [Experience & education](docs/experience.md) · [LinkedIn](https://www.linkedin.com/in/darioplacencio/) · [Contact](mailto:darioplacenciohidalgo@gmail.com)**
 
 ## Professional work
 
-| Area | Selected outcome | Case study |
+### Forecasting and planning decisions
+
+At Rio Tinto's Borates Digital team, I developed a **365-day production forecast with 21% lower error** against the prior baseline and rebuilt an annual planning model in Python, identifying **$746K in confirmed savings**. More recently, I completed a short-horizon cash-forecasting proof of concept in Commercial Services. The article separates those decisions and opens up an independently runnable forecasting evaluation.
+
+**[Read the case study and inspect the code →](projects/forecasting/)**
+
+### AI search for technical knowledge
+
+I engineered a knowledge-search platform over **300,000+ documents**, adopted by **four teams**, combining document extraction with hybrid retrieval. The public companion shows how to preserve evidence through chunking, ranking, fusion, and source-linked results.
+
+**[Read the case study and inspect the code →](projects/knowledge-search/)**
+
+### Collections reporting and reconciliation
+
+I delivered Atlantic Aluminium collections reporting, an **hourly receivables-aging feed**, and reconciliation views. The article explains the calculation choices behind a useful operational view: currency separation, reporting dates, document-level matching, and avoiding double-counted payment values.
+
+**[Read the case study and inspect the code →](projects/commercial-reporting/)**
+
+The professional outcomes above describe separate work experience. The public companions use generated or fictional inputs so the implementation can be reviewed without employer datasets or source code.
+
+## Technical projects with reproducible evidence
+
+| Project | Question worth reviewing | Evidence to inspect |
 | --- | --- | --- |
-| Forecasting and planning | 365-day production forecast with 21% lower error; separate planning optimization identified $746K in confirmed savings | [Read the case](https://placenciohid.github.io/work/forecasting.html) |
-| AI document search | More than 300,000 documents searchable; platform adopted by four teams | [Read the case](https://placenciohid.github.io/work/knowledge-search.html) |
-| Commercial Services | Live Atlantic Aluminium collections dashboard and hourly aging feed | [Read the case](https://placenciohid.github.io/work/commercial-reporting.html) |
+| [Event data and rare-event modeling](projects/event-prediction/) | What was knowable at the moment of prediction? | As-of features, future-label windows, temporal gaps, train-only scaling, original neural scripts |
+| [Capacity-constrained optimization](projects/optimization/) | Can two full schedules still have different value? | Exact optimum versus first fit, capacity checks, original Julia/Pyomo notebooks |
+| [Machine learning from scratch](projects/ml-from-scratch/) | Why do three classifiers learn different boundaries? | Fitting logic, decision-region plots, shared held-out comparison |
+| [App-review text analytics](projects/play-store-reviews/) | Does review language predict the rating? | Reproduced TF-IDF baseline on 12,495 source reviews; duplicate-text groups kept together |
+| [Wine-quality prediction](projects/wine-neural-networks/) | Does a neural network earn its complexity? | Training-only grouped selection and a fixed holdout; comparison with logistic regression |
+| [Chemistry-only wine clustering](projects/wine-clustering/) | Are visually different groups actually well separated? | Quality excluded from fitting; cluster separation, seed stability, and PCA variance |
+| [Passenger classification](projects/spaceship-titanic/) | Does the comparison hold on entirely new travel groups? | Grouped holdout, fold-safe preparation, fixed linear and forest baselines |
+| [Grouped experiments and non-compliance](projects/clustering-noncompliance/) | Is a pilot's apparent precision justified? | Store-level uncertainty and corrected incremental treatment arithmetic |
+| [Dynamic Zoom contribution](projects/dynamic-zoom/) | Why can fast inference still produce lag? | Collaborative source link, frame-queue simulation, latency and dropped-frame accounting |
+| [Restaurant review analysis](projects/yelp-reviews/) | What can word frequencies support? | Reviewed historical notebook, sampling and labeling decisions, visualization correction |
 
-The implementations below are public companions and research examples. Professional results are described in the linked case studies; synthetic example outputs are labeled separately.
+## Run something in under a minute
 
-## Start here
+Eight compact references run on Python 3.10+ with no packages or accounts:
 
-| Project | Question | Runnable example | What to inspect |
-| --- | --- | --- | --- |
-| [Event prediction](projects/event-prediction/) | How do we turn event history into training data without using the future? | `python projects/event-prediction/demo.py` | As-of labels, event resolution, temporal split, training-only scaling |
-| [Optimization](projects/optimization/) | Which procedures fit within a limited schedule? | `python projects/optimization/demo.py` | Objective, capacity constraints, exact solution and a baseline |
-| [ML from scratch](projects/ml-from-scratch/) | How do basic classifiers learn a decision boundary? | `python projects/ml-from-scratch/demo.py` | kNN, a decision stump, logistic regression, held-out evaluation |
-| [Forecast evaluation](projects/forecasting/) | How do we evaluate a forecast without looking ahead? | `python projects/forecasting/demo.py` | Rolling origins, baselines, forecast errors |
-| [Evidence retrieval](projects/knowledge-search/) | How do we retrieve passages with source references? | `python projects/knowledge-search/demo.py` | Chunking, BM25, TF-IDF, fusion, reranking |
-| [Receivables and reconciliation](projects/commercial-reporting/) | What makes a remittance fully matched? | `python projects/commercial-reporting/demo.py` | Aging, currency separation, whole-document counts |
+```bash
+python projects/forecasting/demo.py
+python projects/commercial-reporting/demo.py
+python projects/knowledge-search/demo.py
+python projects/optimization/demo.py
+python projects/event-prediction/demo.py
+python projects/ml-from-scratch/demo.py
+python projects/clustering-noncompliance/demo.py
+python projects/dynamic-zoom/demo.py
+python -m unittest discover -s tests -v
+```
 
-## Additional project evidence
+For the four maintained real-data analyses, use Python 3.11+ and the optional environment:
 
-| Project | Repository evidence |
-| --- | --- |
-| [Dynamic Zoom contribution](projects/dynamic-zoom/) | Pipeline notes, integration sketch, and original upstream implementation |
-| [Play Store reviews](projects/play-store-reviews/) | Original text-analysis notebook and technical notes |
-| [Yelp reviews](projects/yelp-reviews/) | Original notebook and technical notes |
-| [Wine clustering](projects/wine-clustering/) | Original unsupervised-learning notebook |
-| [Wine neural networks](projects/wine-neural-networks/) | Original model notebook |
-| [Clustering and non-compliance](projects/clustering-noncompliance/) | Original experimental analysis notebook |
-| [Spaceship Titanic](projects/spaceship-titanic/) | Both original notebooks and reproduction limits |
+```bash
+python -m pip install -r requirements-analysis.txt
+python projects/play-store-reviews/analyze.py
+python projects/wine-clustering/analyze.py
+python projects/wine-neural-networks/analyze.py
+python projects/spaceship-titanic/analyze.py
+```
 
-## Run locally
+Every analysis records its dataset hash, package versions, split definition, and metrics. `--write` explicitly refreshes its saved result. [The reviewer guide](docs/reviewer-guide.md) points to the most useful files; [the evidence notes](docs/evidence.md) distinguish professional outcomes, rerun analyses, and historical outputs.
 
-Use Python 3.10 or later. Clone the repository, open a terminal in its root, and run any command above. No packages, private datasets, accounts, or GPU are required for these small demonstrations. Their synthetic inputs are deliberately simple; results demonstrate implementation behavior, not business performance.
+## Experience beyond the model
 
-Run checks with `python -m unittest discover -s tests -v`.
+At BHP I coordinated **15+ specialists** on an Asset Health initiative supporting predictive maintenance for mining-truck components. Earlier, I investigated Americas payroll issues and developed an investment case that secured **$5M+ for technology upgrades**. Those roles shaped how I approach technical work: understand the process, identify what a team needs to decide, and make the implementation usable in that context.
 
-## Original work and limitations
+I hold a **master's in Machine Learning & Signal Processing** and a **master's in Business Analytics** from the University of Wisconsin–Madison, plus bachelor's degrees in Engineering Sciences and Industrial Civil Engineering. My research includes publications on augmented-reality training and creativity in business economics. [Full experience, education, and publications →](docs/experience.md)
 
-The `legacy` folders retain the original notebooks and scripts. They may require external coursework data, Spark, Julia, Pyomo, a solver, or paths from the original environment. They are historical work, **not** the runnable examples above. The new demonstrations make a small part of each approach reproducible; they do not reproduce historical model results.
+## Repository notes
 
-[Earlier notebooks](archive/) cover text analytics, clustering, neural networks, and Kaggle experiments. [Legacy datasets](data/legacy/) are retained for existing notebooks; their presence does not establish redistribution rights. The new examples use synthetic data instead.
+Original notebooks and research scripts remain in each project's `legacy/` folder. Maintained implementations sit beside them with current articles and saved results. [Earlier file locations](docs/earlier-file-locations.md) preserve the migration trail; [the archive index](archive/) locates additional historical material.
 
-## File migration
-
-Older website links now point to these locations. Commit-specific links in Git history remain unchanged.
-
-| Original root file | Current location |
-| --- | --- |
-| Building Machine Learning Models from Scratch - Decision Trees, kNN, and Logistic Regression.ipynb | [projects/ml-from-scratch/legacy/Building Machine Learning Models from Scratch - Decision Trees, kNN, and Logistic Regression.ipynb](projects/ml-from-scratch/legacy/Building%20Machine%20Learning%20Models%20from%20Scratch%20-%20Decision%20Trees%2C%20kNN%2C%20and%20Logistic%20Regression.ipynb) |
-| Clustering and Non-Compliance.ipynb | [projects/clustering-noncompliance/legacy/Clustering and Non-Compliance.ipynb](projects/clustering-noncompliance/legacy/Clustering%20and%20Non-Compliance.ipynb) |
-| Data_PipeLine_for_Event_Prediction.py | [projects/event-prediction/legacy/Data_PipeLine_for_Event_Prediction.py](projects/event-prediction/legacy/Data_PipeLine_for_Event_Prediction.py) |
-| GEV-NN-Model.py | [projects/event-prediction/legacy/GEV-NN-Model.py](projects/event-prediction/legacy/GEV-NN-Model.py) |
-| GNN-INCM_with_HSKDM.py | [projects/event-prediction/legacy/GNN-INCM_with_HSKDM.py](projects/event-prediction/legacy/GNN-INCM_with_HSKDM.py) |
-| Google Play Store Review -  Text Analytics.ipynb | [projects/play-store-reviews/legacy/Google Play Store Review -  Text Analytics.ipynb](projects/play-store-reviews/legacy/Google%20Play%20Store%20Review%20-%20%20Text%20Analytics.ipynb) |
-| Julia Optimization - Sudoki and Brain Puzzle.ipynb | [projects/optimization/legacy/Julia Optimization - Sudoki and Brain Puzzle.ipynb](projects/optimization/legacy/Julia%20Optimization%20-%20Sudoki%20and%20Brain%20Puzzle.ipynb) |
-| Neural Networks Application - Wine Quality.ipynb | [projects/wine-neural-networks/legacy/Neural Networks Application - Wine Quality.ipynb](projects/wine-neural-networks/legacy/Neural%20Networks%20Application%20-%20Wine%20Quality.ipynb) |
-| Pyomo Optimization - Operating Room Schedule.ipynb | [projects/optimization/legacy/Pyomo Optimization - Operating Room Schedule.ipynb](projects/optimization/legacy/Pyomo%20Optimization%20-%20Operating%20Room%20Schedule.ipynb) |
-| Spaceship Titanic - Kaggle Competition.ipynb | [projects/spaceship-titanic/legacy/Spaceship Titanic - Kaggle Competition.ipynb](projects/spaceship-titanic/legacy/Spaceship%20Titanic%20-%20Kaggle%20Competition.ipynb) |
-| Spaceship Titanic - Kaggle.ipynb | [projects/spaceship-titanic/legacy/Spaceship Titanic - Kaggle.ipynb](projects/spaceship-titanic/legacy/Spaceship%20Titanic%20-%20Kaggle.ipynb) |
-| Text Analytics - Yelp Reviews.ipynb | [projects/yelp-reviews/legacy/Text Analytics - Yelp Reviews.ipynb](projects/yelp-reviews/legacy/Text%20Analytics%20-%20Yelp%20Reviews.ipynb) |
-| Unsupervised Learning - Wine Quality.ipynb | [projects/wine-clustering/legacy/Unsupervised Learning - Wine Quality.ipynb](projects/wine-clustering/legacy/Unsupervised%20Learning%20-%20Wine%20Quality.ipynb) |
-| reviews.csv | [data/legacy/reviews.csv](data/legacy/reviews.csv) |
-| submission.csv | [data/legacy/submission.csv](data/legacy/submission.csv) |
-| test.csv | [data/legacy/test.csv](data/legacy/test.csv) |
-| train.csv | [data/legacy/train.csv](data/legacy/train.csv) |
-
-## Use and attribution
-
-The original repository did not grant a general open-source license. This update does not change that: the code is provided for portfolio review; contact the author before reuse. Third-party libraries, datasets, and referenced research retain their own terms. No employer source code or internal datasets are included in the runnable demonstrations.
+The repository is provided for portfolio review and retains its existing licensing status. Third-party datasets and referenced implementations retain their own terms; the [included UCI wine data](data/public/) is attributed under CC BY 4.0.

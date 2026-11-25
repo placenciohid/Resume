@@ -1,0 +1,19 @@
+{
+  "data": "synthetic; two rooms, four hours per room",
+  "first_fit_priority_score": 24,
+  "optimal_priority_score": 28,
+  "room_loads_hours": [
+    4,
+    4
+  ],
+  "assignment": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 1,
+    "E": 2,
+    "F": 2,
+    "G": 2,
+    "H": 0
+  }
+}

@@ -1,0 +1,6 @@
+# Optional real-data analyses and figure regeneration; Python 3.11 recommended.
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.7.2
+matplotlib==3.10.6

@@ -1,0 +1,57 @@
+{
+  "data": "synthetic",
+  "train_rows": 2,
+  "validation_rows": 2,
+  "fitted_on_training_only": {
+    "mean": 15,
+    "scale": 7.0710678118654755
+  },
+  "training": [
+    {
+      "id": "A",
+      "record_date": "2024-01-01",
+      "operation_code": "code1",
+      "numeric_feature": 10,
+      "event_count": 1,
+      "last_resolve_date": "2023-12-31",
+      "currently_blocked": 0,
+      "target_event_flag": 1,
+      "scaled_numeric_feature": -0.7071067811865475
+    },
+    {
+      "id": "B",
+      "record_date": "2024-01-02",
+      "operation_code": "code2",
+      "numeric_feature": 20,
+      "event_count": 0,
+      "last_resolve_date": null,
+      "currently_blocked": 0,
+      "target_event_flag": 0,
+      "scaled_numeric_feature": 0.7071067811865475
+    }
+  ],
+  "validation": [
+    {
+      "id": "C",
+      "record_date": "2024-01-15",
+      "operation_code": "code1",
+      "numeric_feature": 100,
+      "event_count": 0,
+      "last_resolve_date": null,
+      "currently_blocked": 0,
+      "target_event_flag": 1,
+      "scaled_numeric_feature": 12.020815280171307
+    },
+    {
+      "id": "D",
+      "record_date": "2024-01-16",
+      "operation_code": "code2",
+      "numeric_feature": 200,
+      "event_count": 0,
+      "last_resolve_date": null,
+      "currently_blocked": 0,
+      "target_event_flag": 0,
+      "scaled_numeric_feature": 26.162950903902257
+    }
+  ]
+}
